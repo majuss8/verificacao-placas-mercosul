@@ -10,7 +10,7 @@ h1, h4 {
 
 #container-imagem {
     position: relative;
-    height: 90%;
+    height: 100%;
     width: 100%;
     background: url('post-placa-mercosul4.jpg');
     background-size: cover;
