@@ -10,8 +10,8 @@ h1, h4 {
 
 #container-imagem {
     position: relative;
-    height: 90vh;
-    width: 100vw;
+    height: 90%;
+    width: 100%;
     background: url('post-placa-mercosul4.jpg');
     background-size: cover;
     opacity: 0.7;
@@ -61,5 +61,4 @@ h1, h4 {
     text-shadow: black 0.1em 0.1em 0.2em;
     box-shadow: black 0.1em 0.1em 0.2em;
     height: 50px;
-    padding: 15%;
 }
