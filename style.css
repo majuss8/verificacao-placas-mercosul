@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+h1, h4 {
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 40px;
+}
+
+#container-imagem {
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+    background: url('post-placa-mercosul4.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    text-align: center;
+}
+
+#elementos {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+#placa, #botao {
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bold;
+    border: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    height: 50px;
+}
+
+#botao {
+    background-color: rgb(110, 237, 241);
+}
+
+#placaDigitada {
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(55, 43, 226, 0.863);
+    border-radius: 10px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    height: 50px;
+
+}
