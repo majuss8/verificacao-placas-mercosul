@@ -26,13 +26,21 @@ const sequencias = {
 
 // Função que é chamada quando o botão é clicado, na qual irá verificar a placa informada pelo usuário
 function verificaEstado() {
-    // Puxa o input com o id 'placa' do arquivo html (DOM - Document Object Model), usando query selector, armazenando em uma constante 'placa'
+    // Puxa o input com o id 'placa' do arquivo html (DOM - Document Object Model), usando query selector, 
+    // armazenando em uma constante 'placa'
     // E o valor do input será formatado para maiúsculo e é retirado os espaços do início e do fim da string
     const placa = window.document.querySelector('input#placa').value.toUpperCase().trim();
+
+
     // Puxa usando query selector, a div com o id 'placaDigitada', no qual será exibido o resultado
     let placaDigitada = window.document.querySelector('div#placaDigitada');
-    // 'regex' é uma constante onde armazena uma expressão regular com o formato da placa mercosul ( LLLNLNN ) -> L = Letra e N = Número
+
+
+    // 'regex' é uma constante onde armazena uma expressão regular com o formato 
+    // da placa mercosul ( LLLNLNN ) -> L = Letra e N = Número
     const regex = /^[A-Z]{3}[0-9][A-Z][0-9]{2}$/
+
+    
     // Realiza o teste do regex na placa informada
     if (!regex.test(placa)) {
         // Se der um valor falso
