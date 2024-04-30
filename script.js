@@ -45,33 +45,27 @@ function verificaEstado() {
     if (!regex.test(placa)) {
         // Se der um valor falso
         // Exibe na div 'placaDigitada' um texto 
-        placaDigitada.textContent = 'A placa informada é inválida';
-        return
+        return placaDigitada.textContent = 'A placa informada é inválida';
     };
 
     // Verifica os 3 primeiros caracteres da placa
     const prefixo = placa.substring(0, 3);
 
     const minasGerais =  sequencias.minasGerais;
-    // verifica se na placa digitada pelo usuário está inclusa (includes) no array de Minas Gerais.
+    // verifica se na placa digitada pelo usuário está
+    // inclusa (includes) no array de Minas Gerais.
     if (minasGerais.includes(prefixo)) {
-        const placaDigitada = window.document.querySelector('div#placaDigitada');
-        placaDigitada.textContent = 'Sua placa é de Minas Gerais';
-        return
+        return placaDigitada.textContent = 'Sua placa é de Minas Gerais';
     }
 
     const goias = sequencias.goias;
     if (goias.includes(prefixo)) {
-        const placaDigitada = window.document.querySelector('div#placaDigitada');
-        placaDigitada.textContent = 'Sua placa é de Goiás';
-        return
+        return placaDigitada.textContent = 'Sua placa é de Goiás';
     }
 
     const distritoFederal = sequencias.distritoFederal
     if (distritoFederal.includes(prefixo)) {
-        const placaDigitada = window.document.querySelector('div#placaDigitada');
-        placaDigitada.textContent = 'Sua placa é do Distrito Federal';
-        return
+        return placaDigitada.textContent = 'Sua placa é do Distrito Federal';
     }
 
     // Se não pertencer a nenhuma das regiões
